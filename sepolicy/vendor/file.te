@@ -5,6 +5,7 @@ type thermal_data_file, data_file_type, file_type;
 
 type sysfs_fingerprint, sysfs_type, fs_type;
 type proc_sysctl_autogroup, proc_type, fs_type;
+type proc_sysctl_schedboost, proc_type, fs_type;
 
 type sysfs_msm_subsys, sysfs_type, fs_type;
 type sysfs_rpm, sysfs_type, fs_type;
