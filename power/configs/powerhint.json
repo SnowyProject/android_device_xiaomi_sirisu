@@ -218,15 +218,6 @@
       "HoldFd": true
     },
     {
-      "Name": "VRKernelCpuSet",
-      "Path": "/dev/cpuset/kernel/cpus",
-      "Values": [
-        "2,3",
-        "0-7"
-      ],
-      "ResetOnInit": true
-    },
-    {
       "Name": "SchedBoost",
       "Path": "/proc/sys/kernel/sched_boost",
       "Values": [
@@ -355,12 +346,6 @@
       "Value": "5931"
     },
     {
-      "PowerHint": "VR_MODE",
-      "Node": "VRKernelCpuSet",
-      "Duration": 0,
-      "Value": "2,3"
-    },
-    {
       "PowerHint": "VR_SUSTAINED_PERFORMANCE",
       "Node": "PowerHALMainState",
       "Duration": 0,
@@ -413,12 +398,6 @@
       "Node": "GPUBusMinFreq",
       "Duration": 0,
       "Value": "3879"
-    },
-    {
-      "PowerHint": "VR_SUSTAINED_PERFORMANCE",
-      "Node": "VRKernelCpuSet",
-      "Duration": 0,
-      "Value": "2,3"
     },
     {
       "PowerHint": "INTERACTION",
