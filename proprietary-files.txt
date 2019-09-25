@@ -868,6 +868,9 @@ vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 vendor/lib/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib/vendor.qti.hardware.alarm@1.0.so
 
+# Power-off charging daemon
+bin/charger:bin/chargeonlymode
+
 # QMI
 etc/permissions/qti_libpermissions.xml
 etc/permissions/qti_permissions.xml
