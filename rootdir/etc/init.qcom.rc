@@ -521,7 +521,6 @@ service vendor.ssr_diag /system/vendor/bin/ssr_diag
     disabled
 
 on charger
-    load_system_props
     start qcom-post-boot
     wait /dev/block/bootdevice/by-name/system
     mount ext4 /dev/block/bootdevice/by-name/system /system ro barrier=1
