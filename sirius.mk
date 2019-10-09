@@ -194,6 +194,7 @@ PRODUCT_PACKAGES += \
     libgeofencing \
     libgnss \
     libgnsspps \
+    libwifi-hal-ctrl
 
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.0-impl-qti \
