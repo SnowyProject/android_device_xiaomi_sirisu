@@ -315,12 +315,9 @@ PRODUCT_PACKAGES += \
     libjson \
     librmnetctl
 
-# RCS
+# Recovery
 PRODUCT_PACKAGES += \
-    rcs_service_aidl \
-    rcs_service_aidl.xml \
-    rcs_service_api \
-    rcs_service_api.xml
+    librecovery_updater_xiaomi
 
 # RenderScript
 PRODUCT_PACKAGES += \
