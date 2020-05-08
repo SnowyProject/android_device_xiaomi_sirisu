@@ -102,6 +102,8 @@ service charge_logger /vendor/bin/charge_logger
 
 on property:sys.boot_completed=1
     start charge_logger
+    #Reinit lmkd to reconfigure lmkd properties
+    setprop lmkd.reinit 1
 
 # For cpusets initialize for Silver Only first and then Silver + Gold
 # Silver Only configuration cannot work with 0-7
