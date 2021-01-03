@@ -26,20 +26,12 @@ persist.vendor.camera.multicam.framesync=1
 persist.vendor.camera.multicam.hwsync=TRUE
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
 
-# CNE
-persist.vendor.cne.feature=1
-
 # Display post-processing
 ro.qualcomm.cabl=0
 ro.vendor.display.ad=1
 ro.vendor.display.ad.hdr_calib_data=/vendor/etc/hdr_config.cfg
 ro.vendor.display.ad.sdr_calib_data=/vendor/etc/sdr_config.cfg
 ro.vendor.display.sensortype=2
-
-# DPM
-persist.vendor.dpm.feature=1
-persist.vendor.dpm.loglevel=0
-persist.vendor.dpm.nsrm.bkg.evt=3955
 
 # Graphics
 debug.sf.disable_backpressure=1
