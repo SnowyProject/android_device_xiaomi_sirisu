@@ -959,15 +959,6 @@
          -->
     <string translatable="false" name="config_mainBuiltInDisplayCutout">M -266,0 L -266,85 L 266,85 L 266,0 Z</string>
 
-    <!-- Height of the status bar.
-         Do not read this dimen directly. Use {@link SystemBarUtils#getStatusBarHeight} instead.
-         -->
-    <dimen name="status_bar_height">85.0px</dimen>
-    <dimen name="status_bar_height_landscape">24.0dp</dimen>
-
-    <!-- Radius of the software rounded corners. -->
-    <dimen name="rounded_corner_radius">48px</dimen>
-
     <!-- List of biometric sensors on the device, in decreasing strength. Consumed by AuthService
          when registering authenticators with BiometricService. Format must be ID:Modality:Strength,
          where: IDs are unique per device, Modality as defined in BiometricAuthenticator.java,
