@@ -60,6 +60,9 @@ function blob_fixup() {
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v30.so" "${2}"
             "${PATCHELF}" --replace-needed "libcutils.so" "libcutils-v30.so" "${2}"
             ;;
+        system_ext/lib64/lib-imsvideocodec.so)
+            "${PATCHELF}" --add-needed "lib-imsvtshim.so" "${2}"
+            ;;
     esac
 }
 
