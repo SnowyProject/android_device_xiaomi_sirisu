@@ -186,7 +186,7 @@ OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
 # Security Patch Level
-VENDOR_SECURITY_PATCH := 2019-09-01
+VENDOR_SECURITY_PATCH := 2020-04-01
 
 # Sepolicy
 include device/qcom/sepolicy/sepolicy.mk
