@@ -492,6 +492,11 @@ else
 
             vmpres_file_min=$((minfree_5 + (minfree_5 - rem_minfree_4)))
             echo $vmpres_file_min > /sys/module/lowmemorykiller/parameters/vmpressure_file_min
+            if [ $MemTotal -gt 5505024 ]; then
+                echo "18432,23040,27648,32256,85296,120640" > /sys/module/lowmemorykiller/parameters/minfree
+            else
+                echo "18432,23040,27648,32256,55296,80640" > /sys/module/lowmemorykiller/parameters/minfree
+            fi
         else
             # Set LMK series, vmpressure_file_min for 32 bit non-go targets.
             # Disable Core Control, enable KLMK for non-go 8909.
@@ -2861,6 +2866,8 @@ case "$target" in
 
       echo "0:1209600" > /sys/module/cpu_boost/parameters/input_boost_freq
       echo 40 > /sys/module/cpu_boost/parameters/input_boost_ms
+      echo "0:1209600 1:0 2:0 3:0 4:0 5:0 6:2054400 7:0" > /sys/module/cpu_boost/parameters/powerkey_input_boost_freq
+      echo 400 > /sys/module/cpu_boost/parameters/powerkey_input_boost_ms
 
       # Set Memory parameters
       configure_memory_parameters
