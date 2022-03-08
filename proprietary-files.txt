@@ -1,4 +1,4 @@
-# proprietary files - from sirius' MIUI package V11.0.3.0.QEBCNXM CN stable version, unless pinned
+# proprietary files - from sirius' MIUI package V12.5.1.0.QEBCNXM CN stable version, unless pinned
 
 # ADSP
 vendor/bin/adsprpcd
