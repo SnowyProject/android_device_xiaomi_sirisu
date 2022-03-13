@@ -1,6 +1,6 @@
 [
   {
-    "repository": "android_kernel_xiaomi_sdm710",
-    "target_path": "kernel/xiaomi/sdm710"
+    "repository": "android_kernel_xiaomi_sirius",
+    "target_path": "kernel/xiaomi/sirius"
   }
 ]
