@@ -37,9 +37,8 @@ static void set(const std::string& path, const T& value) {
     file << value;
 }
 
-static constexpr int kDefaultMaxBrightness = 255;
 static constexpr int kRampSteps = 8;
-static constexpr int kRampMaxStepDurationMs = 50;
+static constexpr int kRampMaxStepDurationMs = 80;
 
 static uint32_t getBrightness(const LightState& state) {
     uint32_t alpha, red, green, blue;
@@ -81,17 +80,6 @@ void Light::handleWhiteLed(const LightState& state, size_t index) {
 
     uint32_t whiteBrightness = getBrightness(stateToUse);
 
-    auto getScaledDutyPercent = [](int brightness) -> std::string {
-        std::string output;
-        for (int i = 0; i <= kRampSteps; i++) {
-            if (i != 0) {
-                output += ",";
-            }
-            output += std::to_string(i * 100 * brightness / (kDefaultMaxBrightness * kRampSteps));
-        }
-        return output;
-    };
-
     // Disable blinking to start
     set("/sys/class/leds/white/blink", 0);
 
@@ -102,13 +90,7 @@ void Light::handleWhiteLed(const LightState& state, size_t index) {
         int32_t pauseHi = stateToUse.flashOnMs - (stepDuration * kRampSteps * 2);
         int32_t pauseLo = stateToUse.flashOffMs;
 
-        if (pauseHi < 0) {
-            stepDuration = stateToUse.flashOnMs / (kRampSteps * 2);
-            pauseHi = 0;
-        }
-
         set("/sys/class/leds/white/start_idx", 0);
-        set("/sys/class/leds/white/duty_pcts", getScaledDutyPercent(whiteBrightness));
         set("/sys/class/leds/white/pause_lo", pauseLo);
         set("/sys/class/leds/white/pause_hi", pauseHi);
         set("/sys/class/leds/white/ramp_step_ms", stepDuration);
