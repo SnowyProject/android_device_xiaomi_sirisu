@@ -757,7 +757,7 @@ vendor/lib/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib/vendor.qti.hardware.alarm@1.0.so
 
 # Power-off charging daemon
-bin/charger:bin/chargeonlymode
+bin/charger:bin/chargeonlymode|fb56bed15f1dd3e37d12c8f4bedc338ecf8f2a30
 
 # QMI - from pyxis - RKQ1.200826.002
 system_ext/etc/permissions/qti_libpermissions.xml|593bcb72cce68ceb0a70f50bcae7d460114e7c62

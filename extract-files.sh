@@ -54,6 +54,15 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
+function blob_fixup() {
+    case "${1}" in
+        bin/chargeonlymode)
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v30.so" "${2}"
+            "${PATCHELF}" --replace-needed "libcutils.so" "libcutils-v30.so" "${2}"
+            ;;
+    esac
+}
+
 # Initialize the helper for sirius
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 
