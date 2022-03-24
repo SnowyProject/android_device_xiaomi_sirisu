@@ -4,14 +4,14 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-$(call inherit-product, device/xiaomi/sirius/sirius.mk)
+$(call inherit-product, device/xiaomi/sirisu/sirisu.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_sirius
-PRODUCT_DEVICE := sirius
+PRODUCT_NAME := lineage_sirisu
+PRODUCT_DEVICE := sirisu
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 8 SE
 PRODUCT_MANUFACTURER := Xiaomi

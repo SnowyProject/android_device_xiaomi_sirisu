@@ -13,7 +13,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/xiaomi/sirius/sirius-vendor.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/sirisu/sirisu-vendor.mk)
 
 # Bootanimation
 TARGET_SCREEN_WIDTH := 1080

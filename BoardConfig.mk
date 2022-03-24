@@ -6,7 +6,7 @@
 
 BOARD_VENDOR := xiaomi
 
-DEVICE_PATH := device/xiaomi/sirius
+DEVICE_PATH := device/xiaomi/sirisu
 
 # Architecture
 TARGET_ARCH := arm64
@@ -42,14 +42,14 @@ BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET := 0x01000000
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sirius
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sirisu
 TARGET_KERNEL_CONFIG := sirius_defconfig
 
 # Platform
 TARGET_BOARD_PLATFORM := sdm710
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := sirius
+TARGET_OTA_ASSERT_DEVICE := sirius,sirisu
 
 # Audio
 BOARD_USES_ALSA_AUDIO := true
@@ -213,4 +213,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary stuffs
--include vendor/xiaomi/sirius/BoardConfigVendor.mk
+-include vendor/xiaomi/sirisu/BoardConfigVendor.mk
