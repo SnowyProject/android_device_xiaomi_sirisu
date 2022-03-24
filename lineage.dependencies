@@ -4,7 +4,7 @@
     "target_path": "hardware/xiaomi"
   },
   {
-    "repository": "android_kernel_xiaomi_sirius",
-    "target_path": "kernel/xiaomi/sirius"
+    "repository": "android_kernel_xiaomi_sirisu",
+    "target_path": "kernel/xiaomi/sirisu"
   }
 ]
