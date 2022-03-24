@@ -1,4 +1,4 @@
-This repository contains device configuration for Xiaomi MI 8 SE (Sirius)
+This repository contains device configuration for Xiaomi MI 8 SE (Sirisu)
 
 Basic   | Spec Sheet
 -------:|:----------
