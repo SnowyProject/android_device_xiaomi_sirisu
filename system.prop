@@ -21,7 +21,6 @@ persist.vendor.camera.enableAdvanceFeatures=0x247
 persist.vendor.camera.multicam.fpsmatch=TRUE
 persist.vendor.camera.multicam.framesync=1
 persist.vendor.camera.multicam.hwsync=TRUE
-vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
 
 # Display post-processing
 ro.qualcomm.cabl=0
